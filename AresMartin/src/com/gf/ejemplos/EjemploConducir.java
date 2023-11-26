@@ -17,13 +17,13 @@ public class EjemploConducir {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Edad: ");
-        int edad = sc.nextInt();
+        int edadcambio = sc.nextInt();
 
         System.out.println("Tienes carnet de conducir? (S/N)");
-        String carnet = sc.next();
+        String carnetcambio = sc.next();
 
-        boolean conducir = (edad >= 18) && ("S".equals(carnet) || "s".equals(carnet));
-        System.out.println("Puedes conducir: " + conducir);
+        boolean conducir = (edadcambio >= 18) && ("S".equals(carnetcambio) || "s".equals(carnetcambio));
+        System.out.println("Puedes conducir (cambio): " + conducir);
     }
 
 }
